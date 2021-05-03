@@ -1,0 +1,6 @@
+module CleverTapReact {
+  umbrella header "clevertap-react-native-umbrella.h"
+
+  export *
+  module * { export * }
+}

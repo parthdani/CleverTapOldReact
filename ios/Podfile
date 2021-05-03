@@ -1,0 +1,36 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CleverTapReactNativeIOSOldVersion' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  #use_frameworks!
+
+  # Pods for CleverTapReactNativeIOSOldVersion
+
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  'Core',
+  'RCTImage',
+  'RCTNetwork',
+  'RCTText',
+  'RCTWebSocket',
+  'DevSupport',
+  'RCTAnimation',
+  'RCTLinkingIOS'
+  ]
+  
+  pod 'clevertap-react-native', :path => '../node_modules/clevertap-react-native', :modular_headers => true
+  pod 'CleverTap-iOS-SDK', :modular_headers => true
+    
+  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  #target 'CleverTapReactNativeIOSOldVersion-tvOSTests' do
+   # inherit! :search_paths
+    # Pods for testing
+  #end
+
+  target 'CleverTapReactNativeIOSOldVersionTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

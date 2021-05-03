@@ -1,0 +1,10 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CleverTap-iOS-SDK" "${PODS_ROOT}/Headers/Public/React" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/Yoga" "${PODS_ROOT}/Headers/Public/clevertap-react-native"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_ROOT}/Headers/Public/CleverTapReact/clevertap-react-native.modulemap" -fmodule-map-file="${PODS_ROOT}/Headers/Public/CleverTapSDK/CleverTap-iOS-SDK.modulemap"
+OTHER_LDFLAGS = $(inherited) -l"stdc++" -framework "ImageIO" -framework "JavaScriptCore"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/CleverTapReact/clevertap-react-native.modulemap" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/CleverTapSDK/CleverTap-iOS-SDK.modulemap"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
